@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | OEYA KELVIN JOSEPH</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="bar">
+<a class="logo" href="index.html">☀ OEYA KELVIN JOSEPH</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html" class="active">Contact</a>
+</nav></div></header>
+<main>
+<h1>Contact us</h1>
+<p>Send us a message and we will reply within one business day.</p>
+
+<form id="contact-form" action="#" method="post">
+<label>Your name
+<input type="text" name="name" required></label>
+<label>Email
+<input type="email" name="email" required></label>
+<label>Topic
+<select name="topic">
+<option>General question</option>
+<option>Quote request</option>
+<option>Support</option>
+</select></label>
+<fieldset>
+<legend>Preferred reply</legend>
+<label><input type="radio" name="reply" value="email" checked> Email</label>
+<label><input type="radio" name="reply" value="phone"> Phone</label>
+</fieldset>
+<label>Message
+<textarea name="message" rows="5" required></textarea></label>
+<label class="check"><input type="checkbox" name="news"> Send me occasional news</label>
+<button type="submit">Send message</button>
+<div id="thanks" role="status">Thanks! Your message was sent.</div>
+</form>
+
+<h2>Find us</h2>
+<iframe class="frame" title="Map of our location" loading="lazy"
+src="https://www.openstreetmap.org/export/embed.html?bbox=-0.13%2C51.50%2C-0.10%2C51.52&amp;layer=mapnik"></iframe>
+
+<h2>Opening hours</h2>
+<ul>
+<li>Monday to Friday: 9am to 5pm</li>
+<li>Saturday: 10am to 2pm</li>
+<li>Sunday: closed</li>
+</ul>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit",function(e){
+e.preventDefault();
+document.getElementById("thanks").style.display="block";
+this.reset();
+});
+</script>
+</main>
+<footer>© 2026 BAIT/26D/U/A0831. All rights reserved.</footer>
+</body>
+</html>
